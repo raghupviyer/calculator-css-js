@@ -1,0 +1,95 @@
+body {
+	background: rgba(255, 154, 3);
+	display: grid;
+}
+
+#display {
+	border: 3px solid rgba(68, 41, 0, 0.219);
+	height: 200px;
+    font-size: large;
+    width: 90vw;
+    max-width: 770px;
+	background: white;
+	justify-self: center;
+	border-radius: 10px;
+	margin-bottom: 30px;
+}
+#buttons {
+	border: 2px solid rgba(1, 39, 255, 0.253);
+	margin-top: 3px;
+	display: grid;
+	max-width: 770px;
+	justify-self: center;
+	grid-template-areas: 'num oper' 'high oper' 'trig oper' 'pnc oper';
+	border-radius: 10px;
+	background: rgb(236, 239, 255);
+}
+#num-buttons {
+	grid-area: num;
+}
+.num-button {
+	border: 1px solid black;
+	margin: 7px;
+	padding: 20px;
+	background: rgba(255, 1, 1, 0.589);
+	border-radius: 10px;
+	color: white;
+}
+#oper-buttons {
+	display: flex;
+	flex-direction: column;
+	grid-area: oper;
+}
+.oper-button {
+	border: 0px;
+	margin: 7px;
+	padding: 12px;
+	width: 50px;
+	height: 50px;
+	background: teal;
+	border-radius: 50%;
+	color: white;
+	font-size: large;
+}
+.equal-button {
+	border: 0px;
+	margin: 7px;
+	padding: 12px;
+	width: 50px;
+	height: 50px;
+	background: orange;
+	border-radius: 50%;
+	color: white;
+	font-size: large;
+}
+#high-buttons {
+	grid-area: high;
+}
+.high-button {
+	border: 1px solid black;
+	margin: 7px;
+	padding: 20px;
+	background: rgba(200, 255, 1, 0.932);
+	border-radius: 10px;
+}
+#trig-buttons {
+	grid-area: trig;
+}
+.trig-button {
+	border: 1px solid black;
+	margin: 7px;
+	padding: 20px;
+	background: rgba(1, 238, 255, 0.356);
+	border-radius: 10px;
+}
+#pnc-buttons {
+	grid-area: pnc;
+}
+.pnc-button {
+	border: 1px solid black;
+	margin: 7px;
+	padding: 20px;
+	background: black;
+	border-radius: 10px;
+	color: white;
+}
